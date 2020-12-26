@@ -8,6 +8,9 @@ ln zshrc ~/.zshrc
 # install cows for cowsay
 git clone https://github.com/bkendzior/cowfiles.git $HOME/.cowsay
 
+# install powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
 # load zshrc
 source $HOME/.zshrc
 
@@ -31,6 +34,8 @@ ln gdbinit ~/.gdbinit
 # load vim configuration
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 rm -f ~/.vimrc
 ln vimrc ~/.vimrc
