@@ -80,6 +80,7 @@ set splitright
 set splitbelow
 
 set mouse=a
+set number
 
 filetype plugin indent on " required
 syntax on                 " required
